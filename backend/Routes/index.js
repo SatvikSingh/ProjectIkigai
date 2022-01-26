@@ -7,4 +7,7 @@ router.get('/', homecontroller.home);
 router.use('/user', require('./userRoute'));
 
 
+router.use('/doctor', require('./doctorRoute'));
+
+
 module.exports=router;
