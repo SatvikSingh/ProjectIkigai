@@ -12,7 +12,7 @@ exports.islogin=async (req,res,next)=>{
         var decoded = jwt.verify(token, process.env.Secret_key);
         var sql = `select * from ${process.env.database}.user_data where email='${decoded.id}'`;
         db.query(sql, async function(err, result) {
-            if(result){
+            if(result.length !== 0){
                 req.User=result[0];
                 next();
             }else{
@@ -37,7 +37,7 @@ exports.islogindoctor=async (req,res,next)=>{
         var decoded = jwt.verify(token, process.env.Secret_key);
         var sql = `select * from ${process.env.database}.doctor_data where email='${decoded.id}'`;
         db.query(sql, async function(err, result) {
-            if(result){
+            if(result.length !== 0){
                 req.Doctor=result[0];
                 next();
             }else{

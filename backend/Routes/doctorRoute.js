@@ -10,6 +10,8 @@ router.post('/editprofile',auth.islogindoctor, doctorcontroller.editprofile);
 router.post('/updatepass',auth.islogindoctor, doctorcontroller.updatepass);
 router.post('/resetreq', doctorcontroller.resetreq);
 router.post('/changepass/:id', doctorcontroller.changepass);
+router.get('/viewprofile',auth.islogindoctor, doctorcontroller.viewprofile);
+
 
 
 module.exports=router;

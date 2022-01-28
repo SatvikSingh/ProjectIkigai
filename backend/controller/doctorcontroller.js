@@ -185,3 +185,32 @@ exports.changepass = async (req, res) => {
         });
     }
 }
+
+// View Profile
+
+exports.viewprofile = async (req, res) => {
+    try {
+        var email=req.Doctor.email
+        var sql = `select * from ${process.env.database}.doctor_data where email='${email}'`;
+        db.query(sql, function(err, result) {
+            return res.status(200).json({
+                success:true,
+                messgae:result
+            });
+        });
+    }
+    catch(err){
+        return res.status(401).json({
+            success:false,
+            messgae:err.message
+        });
+    }
+}
+
+// Doctor Dashboard
+
+// Slot accepting/rejecting
+
+// Chat Feature
+
+// Video Calling

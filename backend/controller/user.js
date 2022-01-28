@@ -3,6 +3,8 @@ const bcrypt = require('bcryptjs');
 const jwt=require('jsonwebtoken');
 const nodemailer=require('../utlis/nodemailer');
 
+// Create User
+
 exports.createUser = async (req, res) => {
     var f_name = req.body.f_name;
     var l_name = req.body.l_name;
@@ -35,6 +37,8 @@ exports.createUser = async (req, res) => {
       });
 }
 
+// Sign In
+
 exports.sigin = async (req, res) => {
     var email = req.body.email;
     var password = req.body.password;
@@ -60,6 +64,8 @@ exports.sigin = async (req, res) => {
     });
 }
 
+// Sign out
+
 exports.signout = async (req, res) => {
     res.clearCookie("token");
     return res.status(200).send({
@@ -67,6 +73,31 @@ exports.signout = async (req, res) => {
         messgae:"Succesfully Logged Out"
     });
 }
+
+// View Profile
+
+exports.viewprofile = async (req, res) => {
+    try {
+        var email=req.User.email
+        console.log(email);
+        var sql = `select * from ${process.env.database}.user_data where email='${email}'`;
+        db.query(sql, function(err, result) {
+            return res.status(200).json({
+                success:true,
+                messgae:result
+            });
+        });
+    }
+    catch(err){
+        return res.status(401).json({
+            success:false,
+            messgae:err.message
+        });
+    }
+}
+
+
+// Edit Profile
 
 exports.editprofile = async (req, res) => {
     var email=req.User.email
@@ -86,6 +117,8 @@ exports.editprofile = async (req, res) => {
         return res.status(200).send("User Updated successfully");
     });
 }
+
+// Update Password
 
 exports.updatepass = async (req, res) => {
     var email=req.User.email
@@ -145,6 +178,8 @@ exports.resetreq = async (req, res) => {
     }
 }
 
+// Change Password 
+
 exports.changepass = async (req, res) => {
     try{
         // console.log(req.params.id);
@@ -184,3 +219,52 @@ exports.changepass = async (req, res) => {
         });
     }
 }
+
+// All Doctor List
+
+exports.allDoctorList = async (req, res) => {
+    try{    
+        var sql = `select * from ${process.env.database}.doctor_data`;
+        db.query(sql, function(err, result) {
+            return res.status(200).json({
+                success:true,
+                messgae:result
+            });
+        });
+    }
+    catch(error){
+        return res.status(401).json({
+            success:false,
+            messgae:err.message
+        });
+    }
+}
+
+// One Doctor List
+
+exports.oneDoctorList = async (req, res) => {
+    try{    
+        var email=req.params.id;
+        var sql = `select * from ${process.env.database}.doctor_data where email='${email}'`;
+        db.query(sql, function(err, result) {
+            return res.status(200).json({
+                success:true,
+                messgae:result
+            });
+        });
+    }
+    catch(error){
+        return res.status(401).json({
+            success:false,
+            messgae:err.message
+        });
+    }
+}
+
+// User Dashboard
+
+// Slot Booking Request
+
+// Chat Feature
+
+// Video Calling
