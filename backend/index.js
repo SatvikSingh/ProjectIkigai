@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const router = require("router");
 const app = express();
 var cookieParser = require('cookie-parser')
+const io = require("socket.io");
 
 app.use(cors());
 app.use(express.json());
