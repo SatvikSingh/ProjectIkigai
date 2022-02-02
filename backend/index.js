@@ -15,6 +15,7 @@ dotenv.config({ path: "./config.env" });
 
 // Connect to Database
 const db = require('./models/db-connection')
+const mongodb = require('./models/mongodb-connection')
 
 app.listen(3001, "127.0.0.1", () => {
   console.log(`Server is up and running on Port ${3001}`);

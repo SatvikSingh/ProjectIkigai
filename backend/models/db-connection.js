@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 dotenv.config({ path: "./config.env" });
 
-// // Connect to DB
+// Connect to MySQL DB
 
 const db = mysql.createConnection({
     user: process.env.user,

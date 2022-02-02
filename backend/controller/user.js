@@ -268,3 +268,5 @@ exports.oneDoctorList = async (req, res) => {
 // Chat Feature
 
 // Video Calling
+
+// Payment Configuration
