@@ -3,7 +3,11 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
   /* HEADINGS */
-  
+  #home{
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
   h1, p {
     color: #fff;
     text-align: center;
@@ -34,7 +38,7 @@
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
   
   /* NAVIGATION */
@@ -45,16 +49,15 @@
     align-items: center;
     height: 70px;
     overflow: hidden;
-    background-color: #88E0D0;
+    /* background-color: #88E0D0; */
   }
   
   .navbar img {
-    height: 35px;
+    height: 70px;
     width: auto;
     justify-self: start;
-    margin-left: 60px;
+    margin-left: 20px;
   }
-  
   .navbar ul {
     list-style: none;
     display: grid;
@@ -70,7 +73,7 @@
   .nav-item a {
     color: #457B9D;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 30px;
     text-decoration: none;
@@ -336,3 +339,49 @@
    }
     
   }
+  #home-content{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 5%;
+    /* margin-top: 3%; */
+    justify-content: space-between;
+  }
+  #home-content>img{
+    height: 75vh;   
+  }
+  #home-content>#content{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    /* background-color: cadetblue ; */
+    width: 40vw;
+  }
+#home-content>#content>#heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 75px;
+    color: #88E0D0;
+    text-align: center;
+}
+#home-content>#content>#about-text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+button{
+  margin-top: 5%;
+  width: 210px;
+  height: 45px;
+  left: 1018px;
+  top: 556px;
+  border: none;
+  background: #88E0D0;
+  border-radius: 15px;
+  color: white;
+  font-weight: 700;
+}
