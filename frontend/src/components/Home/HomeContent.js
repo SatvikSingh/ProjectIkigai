@@ -1,8 +1,8 @@
-import React from "react";
-import "./Navbar.css";
+import React from 'react'
+import "./HomeContent.css";
 import logo from "../../assets/images/Company-logo.png";
 import didi from "../../assets/images/didi.png"
-const Navbar = () => {
+const HomeContent = () => {
   return (
     <div id="home">
       <div class="page-wrapper">
@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default HomeContent
