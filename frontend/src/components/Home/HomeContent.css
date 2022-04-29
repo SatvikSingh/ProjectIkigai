@@ -253,6 +253,11 @@
   
     /* Mobile Devices - Phones/Tablets */
   
+  @media only screen and (max-width: 1110px) { 
+      body{
+        /* background-color: cyan; */
+      }
+  }
   @media only screen and (max-width: 720px) { 
     .features {
       flex-direction: column;

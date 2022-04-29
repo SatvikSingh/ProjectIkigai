@@ -7,51 +7,51 @@ const carddetail=[
   {
     "title":"Mental Health",
     "subtitle":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.",
-    "img_url":"../../assets/images/card-img1.png"
+    "img_url":"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651234344/test/card-img1_wi27jr.png"
   },
   {
     "title":"Mental Health2",
     "subtitle":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.",
-    "img_url":"../../assets/images/card-img1.png"
+    "img_url":"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651234344/test/card-img2_cltoon.png"
   },
   {
     "title":"Mental Health3",
     "subtitle":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.",
-    "img_url":"../../assets/images/card-img1.png"
+    "img_url":"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651234344/test/card-img3_avs2yr.png"
   },
   {
     "title":"Mental Health4",
     "subtitle":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.",
-    "img_url":"../../assets/images/card-img1.png"
+    "img_url":"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651234345/test/card-img4_pedhbh.png"
   },
 ]
 const HomeContent = () => {
   return (
     <div id="home">
-      <div class="page-wrapper">
-        <div class="nav-wrapper">
-          <nav class="navbar">
+      <div className="page-wrapper">
+        <div className="nav-wrapper">
+          <nav className="navbar">
             <img
               id="company-logo"
               src={logo}
               alt="Company Logo"
             />
-            <div class="menu-toggle" id="mobile-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+            <div className="menu-toggle" id="mobile-menu">
+              <span className="bar"></span>
+              <span className="bar"></span>
+              <span className="bar"></span>
             </div>
-            <ul class="nav no-search">
-              <li class="nav-item">
+            <ul className="nav no-search">
+              <li className="nav-item">
                 <a href="#">Home</a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a href="#">About</a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a href="#">Doctors</a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a href="#">Contact Us</a>
               </li>
             </ul>
@@ -75,7 +75,7 @@ const HomeContent = () => {
       <div id='home-cards'>
         {
           carddetail.map(function (item) {
-            return <Cards item={item}/>
+            return <Cards item={item} key={item.img_url}/>
           })
         }
       </div>
