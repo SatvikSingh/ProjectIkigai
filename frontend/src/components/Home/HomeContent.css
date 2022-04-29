@@ -385,3 +385,7 @@ button{
   color: white;
   font-weight: 700;
 }
+#home-cards{
+  display: flex;
+  padding: 85px 20px;
+}

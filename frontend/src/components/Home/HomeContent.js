@@ -2,6 +2,29 @@ import React from 'react'
 import "./HomeContent.css";
 import logo from "../../assets/images/Company-logo.png";
 import didi from "../../assets/images/didi.png"
+import Cards from "./Cards.js"
+const carddetail=[
+  {
+    "title":"Mental Health",
+    "subtitle":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.",
+    "img_url":"../../assets/images/card-img1.png"
+  },
+  {
+    "title":"Mental Health2",
+    "subtitle":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.",
+    "img_url":"../../assets/images/card-img1.png"
+  },
+  {
+    "title":"Mental Health3",
+    "subtitle":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.",
+    "img_url":"../../assets/images/card-img1.png"
+  },
+  {
+    "title":"Mental Health4",
+    "subtitle":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.",
+    "img_url":"../../assets/images/card-img1.png"
+  },
+]
 const HomeContent = () => {
   return (
     <div id="home">
@@ -48,6 +71,13 @@ const HomeContent = () => {
                 <button type="submit">Contact Us</button>
             </div>
           </div>
+      </div>
+      <div id='home-cards'>
+        {
+          carddetail.map(function (item) {
+            return <Cards item={item}/>
+          })
+        }
       </div>
     </div>
   )
