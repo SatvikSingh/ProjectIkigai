@@ -1,42 +1,37 @@
 import React from "react";
-import './Doctor.css'
-import './DoctorJs.js'
+import "./Doctor.css";
 const Doctor = (props) => {
   return (
-      <div className="row active-with-click">
-        <div className="col-md-4 col-sm-6 col-xs-12">
-          <article className="material-card Red">
-            <h2>
-              <span>{props.item.doctorname}</span>
-              <strong>
-                <i className="fa fa-fw fa-star"></i>
-                {props.item.doctorspl}
-              </strong>
-            </h2>
-            <div className="mc-content">
-              <div className="img-container">
-                <img
-                  className="img-responsive"
-                  src={props.item.doctor_img}
-                ></img>
-              </div>
-              <div className="mc-description">
+    <div className="col-lg-4 col-md-6 mb-4 pt-5">
+      <div className="card shadow-sm border-0">
+        <div className="card-body">
+          <div className="user-picture">
+            <img
+              src={props.item.doctor_img}
+              className="shadow-sm rounded-circle"
+              height="130"
+              width="130"
+            />
+          </div>
+          <div className="user-content">
+            <h5 className="text-capitalize user-name">{props.item.doctorname}</h5>
+            {/* <p className=" text-capitalize text-muted small blockquote-footer"> */}
+              {/* {props.item.doctorspl}
+            </p> */}
+            <div className="small">
+              <i className="fas fa-star text-warning"></i>
+              <i className="fas fa-star text-warning"></i>
+              <i className="fas fa-star text-warning"></i>
+              <i className="fas fa-star-half-alt text-warning"></i>
+              <i className="fas fa-star text-light"></i>
+            </div>
+            <p className="small text-muted mb-0">
                 {props.item.doctor_desc}
-              </div>
-            </div>
-            <a className="mc-btn-action">
-              <i className="fa fa-bars"></i>
-            </a>
-            <div className="mc-footer">
-              <h4>Social</h4>
-              <a className="fa fa-fw fa-facebook">{props.item.facebook}</a>
-              <a className="fa fa-fw fa-twitter">{props.item.twitter}</a>
-              <a className="fa fa-fw fa-linkedin">{props.item.linkdin}</a>
-              <a className="fa fa-fw fa-google-plus">{props.item.gplus}</a>
-            </div>
-          </article>
+            </p>
+          </div>
         </div>
       </div>
+    </div>
   );
 };
 
