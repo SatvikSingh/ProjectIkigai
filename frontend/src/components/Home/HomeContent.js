@@ -94,7 +94,7 @@ const HomeContent = () => {
         </div>
       </div>
       <div id="home-content">
-        <img src={didi} />
+        <img src={didi} alt="didi"/>
         <div id="content">
           <div id="heading">
             Mental <span style={{ color: "#C7EEFF" }}>Health</span>

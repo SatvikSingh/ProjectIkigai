@@ -11,6 +11,7 @@ const Doctor = (props) => {
               className="shadow-sm rounded-circle"
               height="130"
               width="130"
+              alt="doctor-img"
             />
           </div>
           <div className="user-content">

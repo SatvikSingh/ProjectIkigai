@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
     <div className='home-wrapper'>
-      <img src={image} id="header-img"/>
+      <img src={image} id="header-img" alt='headerimg'/>
       <HomeContent/>
     </div>
     </>
