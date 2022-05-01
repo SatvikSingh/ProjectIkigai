@@ -397,7 +397,9 @@ button{
   display: flex;
   padding: 85px 20px;
 }
-
+/* 
 .doctor-card {
   display: flex;
-}
+  flex-wrap: wrap;
+  width: 500px;
+}  */

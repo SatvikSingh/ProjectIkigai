@@ -3,7 +3,6 @@ import './Doctor.css'
 import './DoctorJs.js'
 const Doctor = (props) => {
   return (
-    <section className="container">
       <div className="row active-with-click">
         <div className="col-md-4 col-sm-6 col-xs-12">
           <article className="material-card Red">
@@ -38,7 +37,6 @@ const Doctor = (props) => {
           </article>
         </div>
       </div>
-    </section>
   );
 };
 

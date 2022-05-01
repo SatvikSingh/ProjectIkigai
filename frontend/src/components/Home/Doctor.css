@@ -1,4 +1,5 @@
-@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css");
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"); */
 @import "https://fonts.googleapis.com/css?family=Poppins:400,300,200,500,600,700";
 
 .fa-spin-fast {
@@ -26,10 +27,10 @@
     transform: rotate(359deg);
   }
 }
-.img-responsive{
-    /* height: max-content; */
+/* .img-responsive{
+    height: max-content;
     width: max-content;
-}
+} */
 .material-card {
   position: relative;
   height: 0;
