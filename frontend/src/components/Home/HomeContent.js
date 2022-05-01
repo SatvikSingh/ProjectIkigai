@@ -144,12 +144,16 @@ const HomeContent = () => {
         }
       </div>
       <div id='doctors'>
-        Doctors
+        <h1 style={{color: "black", marginBottom: "20px"}}>Doctors</h1> 
+        <div className='doctor-card'>
         {
           doctors.map(function (item) {
-            return <Doctor item={item} key={item.doctor_img}/>
+            return (
+            <Doctor item={item} key={item.doctor_img}/>
+            )
           })
         }
+        </div>
       </div>
     </div>
   )
