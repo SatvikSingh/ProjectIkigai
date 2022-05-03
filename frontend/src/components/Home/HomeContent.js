@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeContent.css";
-import logo from "../../assets/images/Company-logo.png";
+import logo from "../../assets/images/company-logo.png";
 import didi from "../../assets/images/didi.png";
 import Cards from "./Cards.js";
 import Doctor from "./Doctor.js";
@@ -116,13 +116,13 @@ const HomeContent = () => {
           return <Cards item={item} key={item.img_url} />;
         })}
       </div>
-      <div className="bg-light">
+      <div className="heading text-center">Doctors</div>
+      <div className="doctor-section">
         <main>
           <section id="cards">
             <div className="container py-2">
               <div className="row pb-4">
                 <div className="col-12 text-center">
-                  <div className="display-3">Doctors</div>
                   <br/>
                   <br/>
                 </div>
@@ -135,6 +135,10 @@ const HomeContent = () => {
             </div>
           </section>
         </main>
+      </div>
+      <div className="heading text-center">Contact Us</div>
+      <div className="contact-us-section">
+        
       </div>
     </div>
   );

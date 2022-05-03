@@ -47,7 +47,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    height: 70px;
+    height: 90px;
     overflow: hidden;
     /* background-color: #88E0D0; */
   }
@@ -428,4 +428,16 @@ button{
 
 #cards .card .user-content .user-name {
   margin-right: 150px;
+}
+
+.doctor-section {
+  padding-bottom: 50px;
+  background-image: url("../../assets/images/doctor-bg.png");
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 500;
 }
