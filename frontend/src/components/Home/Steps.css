@@ -1,0 +1,23 @@
+#stepbox{
+    width: 90%;
+    border-radius: 16px;
+    margin-top: 13px;
+}
+#stepcontent{
+    display: flex ;
+    flex-direction: column;
+    /* text-align: right; */
+    justify-items: center;
+    align-items: center;
+    margin-left: 35%;
+    /* padding: 8px; */
+    /* padding-left: 8px; */
+    /* padding-right: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60%;
+}
+
+#step-desc {
+    text-align: center;
+}

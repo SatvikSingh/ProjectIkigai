@@ -1,9 +1,14 @@
 import React from "react";
 import "./HomeContent.css";
-import logo from "../../assets/images/company-logo.png";
+import logo from "../../assets/images/Company-logo.png";
 import didi from "../../assets/images/didi.png";
 import Cards from "./Cards.js";
 import Doctor from "./Doctor.js";
+import Contact_didi from "../../assets/images/contact-img.png"
+import Steps from "./Steps";
+import ContactForm from './ContactForm'
+import Footer from '../Footer/Footer';
+
 const carddetail = [
   {
     title: "Mental Health",
@@ -24,6 +29,28 @@ const carddetail = [
     title: "Mental Health4",
     subtitle:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.",
     img_url:"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651234345/test/card-img4_pedhbh.png",
+  },
+];
+const steps = [
+  {
+    title: "Step 1",
+    desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ahguasgduay",
+    img_url:"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651575597/test/contact-steps_tqb25b.png",
+  },
+  {
+    title: "Step 2",
+    desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,",
+    img_url:"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651575597/test/contact-steps_tqb25b.png",
+  },
+  {
+    title: "Step 3",
+    desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,",
+    img_url:"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651575597/test/contact-steps_tqb25b.png",
+  },
+  {
+    title: "Step 4",
+    desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,",
+    img_url:"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651575597/test/contact-steps_tqb25b.png",
   },
 ];
 const doctors = [
@@ -136,10 +163,21 @@ const HomeContent = () => {
           </section>
         </main>
       </div>
-      <div className="heading text-center">Contact Us</div>
       <div className="contact-us-section">
-        
+        <div id="contact-didi">
+          <div className="contactheading">Contact Us</div>
+          <img src={Contact_didi} alt="img"/>
+        </div>
+        <div id="steps">
+          {steps.map(function (item) {
+            return <Steps item={item} key={item.title} />;
+          })}
+        </div>
+        <div id="contact-form">
+          <ContactForm/>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

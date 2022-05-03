@@ -1,0 +1,45 @@
+#leaveusamessage {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #457b9d;
+}
+#contactform {
+  margin-top: 13px;
+  margin-left: 40px;
+}
+#contactform > form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+#contactrow1 {
+  display: flex;
+  
+}
+.contactformitem{
+    margin-top: 13px;
+    padding: 7px;
+    margin-right: 13px;
+    background: rgba(199, 238, 255, 0.17);
+    border: 1.2px solid #457b9d;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+#contactname{
+    width: 80%;
+}
+#contactage{
+    width: 20%;
+}
+#contactnumber{
+    width: 40%;
+}
+#contactemail{
+    width: 60%;
+}
+#contactrow2 {
+  display: flex;
+}
