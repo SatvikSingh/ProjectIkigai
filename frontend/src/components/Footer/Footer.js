@@ -1,8 +1,10 @@
 import React from "react";
 import Logo from "../../assets/images/company-logo.png";
 import "./footer.css";
-import FontAwesome from 'react-fontawesome'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Footer = () => {
   return (
     <div>
@@ -16,10 +18,11 @@ const Footer = () => {
           </div>
         </div>
         <div id="social">
-          <div className="social-text">Follow us on : </div>
-          <FontAwesome icon="fa-brands fa-instagram" />
-          <FontAwesome icon="fa-brands fa-linkedin" />
-          <FontAwesome icon="fa-brands fa-facebook" />
+          <div className="social-text">Follow us on : &nbsp;</div>
+          
+          <InstagramIcon/>
+          <FacebookIcon/>
+          <LinkedInIcon/>
         </div>
       </div>
       <div className="footer-copyright">&copy; Designed in 2002 &nbsp; • &nbsp; Kiran</div>

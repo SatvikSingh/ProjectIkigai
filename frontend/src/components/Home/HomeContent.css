@@ -253,16 +253,130 @@ input {
     background-position: 0% 50%;
   }
 }
+#home-content {
+  display: flex;
+  margin-left: 20%;
+  margin-right: 5%;
+  /* margin-top: 3%; */
+  justify-content: space-between;
+}
+#home-content > img {
+  height: 75vh;
+}
+#home-content > #content {
+  display: grid;
+  align-content: center;
+  text-align: center;
+  /* background-color: cadetblue ; */
+  width: 40vw;
+}
+#home-content > #content > #heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 75px;
+  color: #88e0d0;
+  text-align: center;
+}
+#home-content > #content > #about-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+button {
+  margin-top: 13px !important;
+  width: 210px;
+  height: 45px;
+  left: 1018px;
+  top: 556px;
+  border: none;
+  background: #88e0d0;
+  border-radius: 15px !important;
+  color: white;
+  font-weight: 700;
+}
+#home-cards {
+  display: flex;
+  padding: 85px 20px;
+}
+
+/* ==== Cards using Bootstrap === */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+#cards .card {
+  border-radius: 20px;
+  min-height: 100%;
+}
+
+#cards .heading-border {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+}
+
+#cards .card .user-picture img {
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  background: #f8f9fa !important;
+  padding: 10px;
+}
+#cards .card .user-content .user-name {
+  margin-right: 150px;
+}
+
+.doctor-section {
+  padding-bottom: 50px;
+  background-image: url("../../assets/images/doctor-bg.png");
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.contact-us-section {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.contactheading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 75px;
+  text-align: center;
+  color: #88e0d0;
+}
+#contact-didi {
+  display: grid;
+  justify-items: center;
+}
+#contact-didi > img {
+  width: 90%;
+}
+#contact-didi {
+  flex: 0.25;
+}
+#steps {
+  flex: 0.25;
+  margin-left: 15px;
+}
+#contact-form {
+  flex: 0.5;
+}
+
 
 /* Media Queries */
 
-/* Mobile Devices - Phones/Tablets */
 
-/* @media only screen and (max-width: 1110px) { 
-      body{
-        background-color: cyan;
-      }
-  } */
 @media only screen and (max-width: 720px) {
   .features {
     flex-direction: column;
@@ -349,129 +463,71 @@ input {
     display: none;
   }
 }
-#home-content {
-  display: flex;
-  margin-left: 20%;
-  margin-right: 5%;
-  /* margin-top: 3%; */
-  justify-content: space-between;
-}
-#home-content > img {
-  height: 75vh;
-}
-#home-content > #content {
-  display: grid;
-  align-content: center;
-  text-align: center;
-  /* background-color: cadetblue ; */
-  width: 40vw;
-}
-#home-content > #content > #heading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 75px;
-  color: #88e0d0;
-  text-align: center;
-}
-#home-content > #content > #about-text {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  text-align: center;
-}
-button {
-  margin-top: 13px !important;
-  width: 210px;
-  height: 45px;
-  left: 1018px;
-  top: 556px;
-  border: none;
-  background: #88e0d0;
-  border-radius: 15px !important;
-  color: white;
-  font-weight: 700;
-}
-#home-cards {
-  display: flex;
-  padding: 85px 20px;
-}
-/* 
-.doctor-card {
-  display: flex;
-  flex-wrap: wrap;
-  width: 500px;
-}  */
 
-/* ==== Cards using Bootstrap === */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
-#cards .card {
-  border-radius: 20px;
-  min-height: 100%;
+/* Desktop Large Screen */
+@media screen and (max-width: 1200px) {
+  .contactheading {
+    color: cyan;
+  }
+  /* #doctor-section{
+    width: 100vw !important;
+  } */
 }
-
-#cards .heading-border {
-  position: absolute;
-  width: 100%;
-  top: 60%;
+/* Small Screen */
+@media screen and (max-width: 1024px) {
+  #header {
+    margin-left: 34%;
+  }
+  .section-heading {
+    margin-left: 38%;
+  }
+  #contact-form button[type="submit"] {
+    margin-left: 25%;
+  }
 }
-
-#cards .card .user-picture img {
-  position: absolute;
-  top: -20%;
-  right: 10%;
-  background: #f8f9fa !important;
-  padding: 10px;
+/* Ipad /Tablets */
+@media screen and (max-width: 768px) {
+  .section-heading {
+    margin-left: 35%;
+  }
+  #header {
+    margin-left: 22%;
+  }
+  #contact-form button[type="submit"] {
+    margin-left: 18%;
+  }
 }
-
-#cards .card .user-content .user-name {
-  margin-right: 150px;
+/* Small */
+@media screen and (max-width: 570px) {
+  .section-heading {
+    margin-left: 28%;
+  }
+  #header {
+    margin-left: 8%;
+  }
+  #contact-form button[type="submit"] {
+    margin-left: 10%;
+  }
 }
-
-.doctor-section {
-  padding-bottom: 50px;
-  background-image: url("../../assets/images/doctor-bg.png");
-  background-size: 100% 80%;
-  background-repeat: no-repeat;
+/* Mobile */
+@media screen and (max-width: 480px) {
+  #header {
+    margin-left: 4%;
+  }
+  .section-heading {
+    margin-left: 22%;
+  }
+  #user_profile {
+    margin-right: 1;
+    margin-left: -4%;
+  }
 }
-
-.heading {
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.contact-us-section {
-  display: flex;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.contactheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 75px;
-  text-align: center;
-  color: #88e0d0;
-}
-#contact-didi{
-  display: grid;
-  justify-items: center;
-}
-#contact-didi> img{
-  width: 90%;
-}
-#contact-didi {
-  flex: 0.25;
-}
-#steps {
-  flex: 0.25;
-  margin-left: 15px;
-}
-#contact-form {
-  flex: 0.5;
+/* Small Mobile */
+@media screen and (max-width: 376px) {
+  #header {
+    margin-left: 2%;
+  }
+  #user_profile {
+    margin-left: -11%;
+  }
 }

@@ -145,7 +145,6 @@ const HomeContent = () => {
       </div>
       <div className="heading text-center">Doctors</div>
       <div className="doctor-section">
-        <main>
           <section id="cards">
             <div className="container py-2">
               <div className="row pb-4">
@@ -161,7 +160,6 @@ const HomeContent = () => {
               </div>
             </div>
           </section>
-        </main>
       </div>
       <div className="contact-us-section">
         <div id="contact-didi">
