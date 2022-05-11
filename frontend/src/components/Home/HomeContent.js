@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeContent.css";
-import logo from "../../assets/images/Company-logo.png";
+import logo from "../../assets/images/company-logo.png";
 import didi from "../../assets/images/didi.png";
 import Cards from "./Cards.js";
 import Doctor from "./Doctor.js";
@@ -34,7 +34,7 @@ const carddetail = [
 const steps = [
   {
     title: "Step 1",
-    desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, ahguasgduay",
+    desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
     img_url:"https://res.cloudinary.com/dosn4zwj8/image/upload/v1651575597/test/contact-steps_tqb25b.png",
   },
   {
